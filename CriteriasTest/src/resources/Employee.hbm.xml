@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+  
+  
+  <hibernate-mapping>
+  
+  <class name = "beans.Employee" table ="CriteriaEmp" schema="test">
+  <id name="id" column="EmpID" type="integer"></id>
+
+	<property name="name" column="EmpName"></property>
+	<property name="sal" column="EmpSal"></property>
+	<property name="email" column="EmpEmail"></property>  
+  
+  </class>
+  </hibernate-mapping>
